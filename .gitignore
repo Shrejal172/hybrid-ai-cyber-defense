@@ -1,0 +1,45 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datasets
+data/
+data_unsw/
+*.csv
+*.parquet
+*.pkl
+
+# Trained models
+checkpoints/
+checkpoints_baseline/
+checkpoints_unsw/
+*.pth
+*.pt
+*.ckpt
+
+# Logs
+logs/
+*.log
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Windsurf / editor-specific files
+.windsurf/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local backup copies
+app_backup_*.py
