@@ -50,8 +50,13 @@ See `requirements.txt` for complete dependencies.
 ## 🚀 Installation
 
 ```bash
-# Clone the repository
-cd "DL-CD Project"
+# Navigate to the project directory
+cd "DL-CD Project - main"
+
+# Create and activate virtual environment
+python -m venv .venv
+.venv\Scripts\Activate.ps1  # On Windows
+# OR source .venv/bin/activate  # On Linux/Mac
 
 # Install dependencies
 pip install -r requirements.txt
@@ -89,7 +94,7 @@ python train.py --data-path /path/to/your/dataset.csv
 ### 2. Launch Dashboard
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 The dashboard will be available at `http://localhost:8501`
@@ -145,7 +150,7 @@ The system tracks the following metrics:
 ## 🏛️ Project Structure
 
 ```
-DL-CD Project/
+DL-CD Project - main/
 ├── config.py              # Configuration and hyperparameters
 ├── pipeline.py            # Data preprocessing and feature engineering
 ├── models.py              # Autoencoder and Temporal Classifier models
@@ -205,6 +210,13 @@ DL-CD Project/
 3. **Evaluation**: Check `logs/training_results.json` for performance metrics
 4. **Deployment**: Launch the dashboard with `streamlit run app.py`
 5. **Monitoring**: Monitor real-time traffic, analyze anomalies, and respond to threats
+
+## 🤝 Contributing
+
+## ⚠️ Important Notes
+
+- **Virtual Environment**: If you renamed the project folder after creating the virtual environment, the `.venv` folder may have incorrect paths. Always use `python -m streamlit run app.py` instead of `streamlit run app.py` to avoid path issues.
+- **Folder Renaming**: If you move or rename the project folder, recreate the virtual environment to ensure all paths are correct.
 
 ## 🤝 Contributing
 
